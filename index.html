@@ -118,6 +118,7 @@
   .study-card.open .traitline{display:block}
   .tag{display:inline-block;background:#eef3f1;border-radius:6px;padding:1px 7px;font-size:11px;margin:2px 3px 0 0}
   footer{text-align:center;color:var(--muted);font-size:12px;padding:20px}
+  footer p{margin:4px 0 0}
 
   /* ---- 도구모음 (이름/저장/인쇄) ---- */
   .toolbar{background:#fff;border:1px solid var(--line);border-radius:14px;padding:12px 16px;
@@ -166,7 +167,7 @@
   }
 </style>
 </head>
-<body>
+<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false">
 <header class="app">
   <h1>🔬 생물의 분류 학습 프로그램</h1>
   <p>클릭하며 익히는 <b>종속과목강문계</b> · <b>3역 6계</b> · <b>식물·동물 계통수</b></p>
@@ -187,7 +188,6 @@
     <span class="status" id="save-status">채점을 하면 점수가 자동 저장됩니다.</span>
   </div>
 
-  <!-- ================= TAB 1 ================= -->
   <section class="panel active" id="t1">
     <div class="card">
       <h2>① 종속과목강문계 개념 익히기</h2>
@@ -213,7 +213,6 @@
     </div>
   </section>
 
-  <!-- ================= TAB 2 ================= -->
   <section class="panel" id="t2">
     <div class="card">
       <h2>② 3역 6계로 생물 분류하기</h2>
@@ -239,7 +238,6 @@
     </div>
   </section>
 
-  <!-- ================= TAB 3 ================= -->
   <section class="panel" id="t3">
     <div class="card">
       <h2>③ 식물계 계통수 만들기 (문 수준)</h2>
@@ -268,7 +266,6 @@
     </div>
   </section>
 
-  <!-- ================= TAB 4 ================= -->
   <section class="panel" id="t4">
     <div class="card">
       <h2>④ 동물계 계통수 만들기 (문 수준)</h2>
@@ -292,7 +289,10 @@
     </div>
   </section>
 </main>
-<footer>생물의 분류 · 클릭 학습 프로그램</footer>
+<footer>
+  <p>생물의 분류 · 클릭 학습 프로그램</p>
+  <p>All Rights Reserved (무단 전재 및 재배포 금지)</p>
+</footer>
 
 <div class="modal-bg" id="rec-modal">
   <div class="modal">
